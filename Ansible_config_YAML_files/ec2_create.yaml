@@ -6,7 +6,7 @@
   - name: Create EC2 instances
     amazon.aws.ec2_instance:
       name: "{{ item.name }}"
-      key_name: "abhi-aws-keypair"
+      key_name: ""
       instance_type: t2.micro
       security_group: default
       region: ap-south-1
